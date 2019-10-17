@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBR-Fr-xz3">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details Controller-->
+        <scene sceneID="kXv-QV-FXU">
+            <objects>
+                <viewController storyboardIdentifier="DetailsScreen" id="LBR-Fr-xz3" customClass="DetailsController" customModule="ReactiveTestBD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f4M-VO-ZTv" customClass="DetailsView" customModule="ReactiveTestBD" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHr-A7-TUx">
+                                <rect key="frame" x="0.0" y="64" width="398" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zel-Rb-2BF">
+                                <rect key="frame" x="16" y="141" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf6-G7-iV0">
+                                <rect key="frame" x="16" y="772" width="382" height="40"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.80000000000000004" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hpt-uE-mZS"/>
+                                </constraints>
+                                <state key="normal" title="Create News">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svl-D1-fZZ">
+                                <rect key="frame" x="16" y="99.5" width="382" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="okH-MS-tfL" firstAttribute="trailing" secondItem="svl-D1-fZZ" secondAttribute="trailing" constant="16" id="5eu-ef-L8s"/>
+                            <constraint firstItem="zel-Rb-2BF" firstAttribute="leading" secondItem="okH-MS-tfL" secondAttribute="leading" constant="16" id="7zN-8N-Qtn"/>
+                            <constraint firstItem="zel-Rb-2BF" firstAttribute="top" secondItem="svl-D1-fZZ" secondAttribute="bottom" constant="10" id="DXG-tC-vSf"/>
+                            <constraint firstItem="MHr-A7-TUx" firstAttribute="leading" secondItem="okH-MS-tfL" secondAttribute="leading" id="P5M-A0-oBD"/>
+                            <constraint firstItem="okH-MS-tfL" firstAttribute="trailing" secondItem="zel-Rb-2BF" secondAttribute="trailing" constant="16" id="PnZ-aP-zMw"/>
+                            <constraint firstItem="MHr-A7-TUx" firstAttribute="top" secondItem="okH-MS-tfL" secondAttribute="top" constant="20" id="UfF-fa-IcP"/>
+                            <constraint firstItem="okH-MS-tfL" firstAttribute="trailing" secondItem="tf6-G7-iV0" secondAttribute="trailing" constant="16" id="YdW-3v-W1D"/>
+                            <constraint firstItem="svl-D1-fZZ" firstAttribute="top" secondItem="MHr-A7-TUx" secondAttribute="bottom" constant="10" id="Za9-US-iwE"/>
+                            <constraint firstItem="tf6-G7-iV0" firstAttribute="leading" secondItem="okH-MS-tfL" secondAttribute="leading" constant="16" id="cYw-hN-XX1"/>
+                            <constraint firstItem="okH-MS-tfL" firstAttribute="bottom" secondItem="tf6-G7-iV0" secondAttribute="bottom" constant="50" id="vTb-qN-SQt"/>
+                            <constraint firstItem="svl-D1-fZZ" firstAttribute="leading" secondItem="okH-MS-tfL" secondAttribute="leading" constant="16" id="vcg-cc-Djd"/>
+                            <constraint firstItem="okH-MS-tfL" firstAttribute="trailing" secondItem="MHr-A7-TUx" secondAttribute="trailing" constant="16" id="y2p-hj-Qpe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="okH-MS-tfL"/>
+                        <connections>
+                            <outlet property="createNewsBtn" destination="tf6-G7-iV0" id="94p-bF-MMr"/>
+                            <outlet property="dateLabel" destination="MHr-A7-TUx" id="b18-Rb-VWa"/>
+                            <outlet property="detailsLabel" destination="zel-Rb-2BF" id="VyD-GH-ps5"/>
+                            <outlet property="titleLabel" destination="svl-D1-fZZ" id="MGD-Gu-vd1"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="detailsView" destination="f4M-VO-ZTv" id="3up-zn-ZlH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RvR-4j-iWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="112.5"/>
+        </scene>
+    </scenes>
+</document>

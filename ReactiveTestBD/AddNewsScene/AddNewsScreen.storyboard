@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ksi-7q-jWo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add News Controller-->
+        <scene sceneID="6A4-Xa-M9g">
+            <objects>
+                <viewController storyboardIdentifier="AddNewsScreen" id="Ksi-7q-jWo" customClass="AddNewsController" customModule="ReactiveTestBD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1PA-4r-II5" customClass="AddNewsView" customModule="ReactiveTestBD" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="rZr-XV-kcR">
+                                <rect key="frame" x="16" y="70" width="343" height="228"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="jyX-ZV-cnq">
+                                        <rect key="frame" x="57" y="0.0" width="229" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cI8-GQ-HYK">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dd/mm/yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xM-wP-fsF">
+                                                <rect key="frame" x="128" y="0.0" width="101" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIm-8b-GfL">
+                                        <rect key="frame" x="51.5" y="67" width="240" height="161"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="GIm-8b-GfL" secondAttribute="height" multiplier="240:161" id="uDe-GD-EEJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rZr-XV-kcR" secondAttribute="height" multiplier="343:228" id="Bcd-mF-rtx"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGP-A7-6CK">
+                                <rect key="frame" x="16" y="328" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.1137254902" green="0.80000000000000004" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bUg-Yz-rvt"/>
+                                </constraints>
+                                <state key="normal" title="Add news">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PGP-A7-6CK" firstAttribute="top" secondItem="rZr-XV-kcR" secondAttribute="bottom" constant="30" id="LZy-cv-VMk"/>
+                            <constraint firstItem="rZr-XV-kcR" firstAttribute="leading" secondItem="fYX-GI-y67" secondAttribute="leading" constant="16" id="LoQ-2J-ijd"/>
+                            <constraint firstItem="fYX-GI-y67" firstAttribute="trailing" secondItem="PGP-A7-6CK" secondAttribute="trailing" constant="16" id="OSZ-uz-h0b"/>
+                            <constraint firstItem="PGP-A7-6CK" firstAttribute="leading" secondItem="fYX-GI-y67" secondAttribute="leading" constant="16" id="Yzi-fG-4TF"/>
+                            <constraint firstItem="rZr-XV-kcR" firstAttribute="top" secondItem="fYX-GI-y67" secondAttribute="top" constant="50" id="uZt-5a-VOi"/>
+                            <constraint firstItem="fYX-GI-y67" firstAttribute="trailing" secondItem="rZr-XV-kcR" secondAttribute="trailing" constant="16" id="y28-3U-kAL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fYX-GI-y67"/>
+                        <connections>
+                            <outlet property="addNewsButton" destination="PGP-A7-6CK" id="nAe-Li-aa9"/>
+                            <outlet property="dateTextField" destination="8xM-wP-fsF" id="1Hu-Rd-XYc"/>
+                            <outlet property="descriptionTextView" destination="GIm-8b-GfL" id="msv-tN-jia"/>
+                            <outlet property="titileTextField" destination="cI8-GQ-HYK" id="l8e-1L-Jq3"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="addNewsView" destination="1PA-4r-II5" id="phz-Rh-yFl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pLS-9d-vWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="-64"/>
+        </scene>
+    </scenes>
+</document>
